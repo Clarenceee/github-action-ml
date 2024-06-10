@@ -38,7 +38,7 @@ if not os.path.exists(data_dir):
     os.makedirs(data_dir)
     
 # %%
-new_file_name = 'etl_' + datetime.now().strftime('%Y-%m-%d') + '.csv'
+new_file_name = 'etl_' + datetime.now().strftime('%Y%m%d_%H%M%S') + '.csv'
 new_file_name = new_file_name.replace('-', '_')
 new_file_path = os.path.join('data', new_file_name)
 
