@@ -4,7 +4,7 @@ name: etl_daily # Name of the action that will appear in the "Actions" tab
 
 on: # Trigger on the workflow 
   schedule:
-    - cron: '0 0/24 * * *' # Execute every 6 hours
+    - cron: '0 0 * * *' # Execute at 12am everyday
   workflow_dispatch: # Allows the workflow to be manually triggered from the GitHub Actions tab.
 
 jobs:
