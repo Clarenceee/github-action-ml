@@ -30,9 +30,13 @@ jobs:
           URI: ${{ secrets.URI }}
         run: 
           python etl_daily.py
-          python test_mlflow.py
 
-      
+      - name: Execute Mlflow Test Connection
+        env:
+          URI: ${{ secrets.URI }}
+        run: 
+          python test_mlflow.py      
+
       - name: Upload data folder
         uses: actions/upload-artifact@v4
         with:
