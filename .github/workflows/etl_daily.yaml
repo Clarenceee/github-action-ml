@@ -25,10 +25,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Python Script
+      - name: Execute Python Scripts
         env:
           URI: ${{ secrets.URI }}
-        run: python etl_daily.py
+        run: 
+          python etl_daily.py
+          python test_mlflow.py
+
       
       - name: Upload data folder
         uses: actions/upload-artifact@v4
