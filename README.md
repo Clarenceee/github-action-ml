@@ -15,5 +15,9 @@ Data Version Control [(DVC)](https://dvc.org/doc/start?tab=Windows-Cmd-) is enab
 - It can be connected to cloud storages / Google drive / local storage systems referred as "remotes"
 - In this repository it is connected to local temp storage
 
+```cmd
 mkdir %TEMP%/dvcstore
 dvc remote add -d myremote %TEMP%\dvcstore
+```
+
+DVC is technically not a version control system by itself! It manipulates .dvc files, whose contents define the data file versions. Git is already used to version your code, and now it can also version your data alongside it.
