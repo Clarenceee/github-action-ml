@@ -5,7 +5,7 @@ from datetime import datetime
 # %%
 print("Setting Tracking URI")
 
-mlflow.set_tracking_uri('http://localhost:8080')
+mlflow.set_tracking_uri('http://localhost:5000')
 
 # %%
 experiment_name = "Test-Github-Action"

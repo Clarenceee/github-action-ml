@@ -1,4 +1,5 @@
 venv*
+actions-runner*
 
 # Ignore mlflow artifacts
 mlruns*
