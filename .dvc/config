@@ -1,2 +1,5 @@
 [core]
     autostage = true
+    remote = mylocalremote
+['remote "mylocalremote"']
+    url = C:/Users/clare/AppData/Local/Temp/dvcstore
