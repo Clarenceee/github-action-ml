@@ -5,7 +5,7 @@ from datetime import datetime
 # %%
 print("Setting Tracking URI")
 
-mlflow.set_tracking_uri('http://localhost:5000')
+mlflow.set_tracking_uri('http://localhost:8080')
 
 # %%
 experiment_name = "Test-Github-Action"
@@ -23,3 +23,4 @@ if experiment:
 else:
     print("Experiment not found")
     
+# Transfer artifacts file out
