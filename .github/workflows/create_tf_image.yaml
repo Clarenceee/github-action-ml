@@ -32,3 +32,5 @@ jobs:
     - name: Push Custom Image to DockerHub
       run: |
         docker push ${{ secrets.DOCKER_USERNAME }}/tensorflow-serving-custom-gha:latest
+
+    - name: Run Test Script for Model Performance.
