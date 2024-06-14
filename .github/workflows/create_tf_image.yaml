@@ -3,7 +3,7 @@ name: Build and Push Custom TensorFlow Serving Image
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
