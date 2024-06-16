@@ -4,15 +4,15 @@ import mlflow
 import dagshub
 from datetime import datetime
 
-DAGSHUB_TOKEN = os.environ['dagshub_token']
-print(DAGSHUB_TOKEN)
+# DAGSHUB_TOKEN = os.environ['dagshub_token']
+# print(DAGSHUB_TOKEN)
 
 # %%
 print("Setting Tracking URI")
 
 # mlflow.set_tracking_uri('http://192.168.1.17:5000')
 # dagshub.init("github-action-ml", "Clarenceee", mlflow=True)
-dagshub.auth.add_app_token(DAGSHUB_TOKEN)
+dagshub.auth.add_app_token('f3874a38d72fbe0ff4ff316dba160cb01cce861f')
 
 # %%
 experiment_name = "Test-Github-Action"
