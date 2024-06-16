@@ -12,7 +12,7 @@ print("Setting Tracking URI")
 
 # mlflow.set_tracking_uri('http://192.168.1.17:5000')
 # dagshub.init("github-action-ml", "Clarenceee", mlflow=True)
-dagshub.auth.add_app_token('f3874a38d72fbe0ff4ff316dba160cb01cce861f')
+dagshub.auth.add_app_token('f3874a38d72fbe0ff4ff316dba160cb01cce861f', url='https://dagshub.com/Clarenceee/github-action-ml.mlflow/')
 
 # %%
 experiment_name = "Test-Github-Action"
