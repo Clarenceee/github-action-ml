@@ -12,7 +12,6 @@ print("Setting Tracking URI")
 
 mlflow.set_tracking_uri('https://dagshub.com/Clarenceee/github-action-ml.mlflow/')
 # dagshub.init("github-action-ml", "Clarenceee", mlflow=True)
-# dagshub.auth.add_app_token('f3874a38d72fbe0ff4ff316dba160cb01cce861f', url='https://dagshub.com/Clarenceee/github-action-ml.mlflow/')
 
 # %%
 experiment_name = "Test-Github-Action"
@@ -31,4 +30,3 @@ else:
     print("Experiment not found")
     
 # Transfer artifacts file out
-# %%
