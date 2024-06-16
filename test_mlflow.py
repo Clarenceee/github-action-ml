@@ -5,6 +5,8 @@ import dagshub
 from datetime import datetime
 
 DAGSHUB_TOKEN = os.environ['dagshub_token']
+print(DAGSHUB_TOKEN)
+
 # %%
 print("Setting Tracking URI")
 
