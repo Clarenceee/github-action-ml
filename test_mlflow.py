@@ -1,11 +1,13 @@
 #%%
 import mlflow 
+import dagshub
 from datetime import datetime
 
 # %%
 print("Setting Tracking URI")
 
-mlflow.set_tracking_uri('http://192.168.1.17:5000')
+# mlflow.set_tracking_uri('http://192.168.1.17:5000')
+dagshub.init("github-action-ml", "Clarenceee", mlflow=True)
 
 # %%
 experiment_name = "Test-Github-Action"
