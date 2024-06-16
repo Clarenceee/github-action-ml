@@ -10,7 +10,7 @@ from datetime import datetime
 # %%
 print("Setting Tracking URI")
 
-mlflow.set_tracking_uri('https://dagshub.com/Clarenceee/github-action-ml.mlflow/')
+# mlflow.set_tracking_uri('https://dagshub.com/Clarenceee/github-action-ml.mlflow/')
 # dagshub.init("github-action-ml", "Clarenceee", mlflow=True)
 
 # %%
