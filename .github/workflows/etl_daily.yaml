@@ -30,9 +30,9 @@ jobs:
           
       - name: Set dagshub environments
         run: |
-          set MLFLOW_TRACKIN_URI=https://dagshub.com/Clarenceee/github-action-ml.mlflow
-          set MLFLOW_TRACKING_USERNAME=Clarenceee
-          set MLFLOW_TRACKING_PASSWORD=f3874a38d72fbe0ff4ff316dba160cb01cce861f
+          export MLFLOW_TRACKIN_URI=https://dagshub.com/Clarenceee/github-action-ml.mlflow
+          export MLFLOW_TRACKING_USERNAME=Clarenceee
+          export MLFLOW_TRACKING_PASSWORD=f3874a38d72fbe0ff4ff316dba160cb01cce861f
           
       - name: Execute Mlflow Test Connection
         run: 
